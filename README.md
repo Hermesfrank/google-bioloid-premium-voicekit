@@ -1,2 +1,2 @@
 # google-bioloid-premium-voicekit
- Files used to create a Google Assistant voice-directed robot
+ Files used to create a Google Assistant SDK voice-directed robot - see details of robot's development at frankhermes.com ...
