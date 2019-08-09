@@ -1,0 +1,496 @@
+{
+    "manifest": {
+        "displayName": "RBP Robot Commands",
+        "invocationName": "robot commands",
+        "category": "PRODUCTIVITY"
+    },
+    "actions": [
+		{
+            "name": "Cheer",
+            "availability": {
+                "deviceClasses": [
+                    {
+                        "assistantSdkDevice": {}
+                    }
+                ]
+            },
+            "intent": {
+                "name": "robot.device.command.Cheer",
+                "trigger": {
+                    "queryPatterns": [
+                        "cheer",
+						"do you cheer",
+						"can you cheer",
+						"do you ever cheer",
+						"please cheer"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "staticFulfillment": {
+                    "templatedResponse": {
+                        "items": [
+                            {
+                                "simpleResponse": {
+                                    "textToSpeech": "i cheer whenever i think of my creator, i am so grateful he created me"
+                                }
+                            },
+                            {
+                                "deviceExecution": {
+                                    "command": "Cheer"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "PoundChest",
+            "availability": {
+                "deviceClasses": [
+                    {
+                        "assistantSdkDevice": {}
+                    }
+                ]
+            },
+            "intent": {
+                "name": "robot.device.command.PoundChest",
+                "trigger": {
+                    "queryPatterns": [
+                        "pound chest",
+						"pound your chest",
+						"can you pound your chest"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "staticFulfillment": {
+                    "templatedResponse": {
+                        "items": [
+                            {
+                                "simpleResponse": {
+                                    "textToSpeech": "I am a proud robot"
+                                }
+                            },
+                            {
+                                "deviceExecution": {
+                                    "command": "PoundChest"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+		{
+            "name": "Wink",
+            "availability": {
+                "deviceClasses": [
+                    {
+                        "assistantSdkDevice": {}
+                    }
+                ]
+            },
+            "intent": {
+                "name": "robot.device.command.Wink",
+                "trigger": {
+                    "queryPatterns": [
+                        "can you wink",
+						"wink",
+						"please wink"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "staticFulfillment": {
+                    "templatedResponse": {
+                        "items": [
+                            {
+                                "simpleResponse": {
+                                    "textToSpeech": "sure, i can wink, watch me"
+                                }
+                            },
+                            {
+                                "deviceExecution": {
+                                    "command": "Wink"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+		{
+            "name": "Smile",
+            "availability": {
+                "deviceClasses": [
+                    {
+                        "assistantSdkDevice": {}
+                    }
+                ]
+            },
+            "intent": {
+                "name": "robot.device.command.Smile",
+                "trigger": {
+                    "queryPatterns": [
+                        "smile",
+						"can you smile",
+						"please smile"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "staticFulfillment": {
+                    "templatedResponse": {
+                        "items": [
+                            {
+                                "simpleResponse": {
+                                    "textToSpeech": "Sure, I can smile - did you say something funny?"
+                                }
+                            },
+                            {
+                                "deviceExecution": {
+                                    "command": "Smile"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+		{
+            "name": "Frown",
+            "availability": {
+                "deviceClasses": [
+                    {
+                        "assistantSdkDevice": {}
+                    }
+                ]
+            },
+            "intent": {
+                "name": "robot.device.command.Frown",
+                "trigger": {
+                    "queryPatterns": [
+                        "frown",
+						"can you frown",
+						"please frown"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "staticFulfillment": {
+                    "templatedResponse": {
+                        "items": [
+                            {
+                                "simpleResponse": {
+                                    "textToSpeech": "Sure, I will frown if something makes me sad"
+                                }
+                            },
+                            {
+                                "deviceExecution": {
+                                    "command": "Frown"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+		{
+            "name": "Buddy",
+            "availability": {
+                "deviceClasses": [
+                    {
+                        "assistantSdkDevice": {}
+                    }
+                ]
+            },
+            "intent": {
+                "name": "robot.device.command.Buddy",
+                "trigger": {
+                    "queryPatterns": [
+                        "buddy",
+						"whose your buddy",
+						"do you have a buddy"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "staticFulfillment": {
+                    "templatedResponse": {
+                        "items": [
+                            {
+                                "simpleResponse": {
+                                    "textToSpeech": "yes, my buddy is max walton barron"
+                                }
+                            },
+                            {
+                                "deviceExecution": {
+                                    "command": "Buddy"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+		{
+            "name": "HandStand",
+            "availability": {
+                "deviceClasses": [
+                    {
+                        "assistantSdkDevice": {}
+                    }
+                ]
+            },
+            "intent": {
+                "name": "robot.device.command.HandStand",
+                "trigger": {
+                    "queryPatterns": [
+                        "handstand",
+						"can you do a handstand",
+						"please do a handstand",
+						"can I see a handstand"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "staticFulfillment": {
+                    "templatedResponse": {
+                        "items": [
+                            {
+                                "simpleResponse": {
+                                    "textToSpeech": "I will do a handstand"
+                                }
+                            },
+                            {
+                                "deviceExecution": {
+                                    "command": "HandStand"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+		{
+            "name": "Pushup",
+            "availability": {
+                "deviceClasses": [
+                    {
+                        "assistantSdkDevice": {}
+                    }
+                ]
+            },
+            "intent": {
+                "name": "robot.device.command.Pushup",
+                "trigger": {
+                    "queryPatterns": [
+                        "pushup",
+						"pushups",
+						"can you do some pushups",
+						"do a pushup",
+						"can you do a pushup",
+						"please do pushups"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "staticFulfillment": {
+                    "templatedResponse": {
+                        "items": [
+                            {
+                                "simpleResponse": {
+                                    "textToSpeech": "okay, I will do three pushups"
+                                }
+                            },
+                            {
+                                "deviceExecution": {
+                                    "command": "Pushup"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+		{
+            "name": "Forward",
+            "availability": {
+                "deviceClasses": [
+                    {
+                        "assistantSdkDevice": {}
+                    }
+                ]
+            },
+            "intent": {
+                "name": "robot.device.command.Forward",
+                "trigger": {
+                    "queryPatterns": [
+                        "forward",
+						"move forward",
+						"can you move forward",
+						"go forward",
+						"forward please",
+						"can you go forward",
+						"please move forward",
+						"please go forward"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "staticFulfillment": {
+                    "templatedResponse": {
+                        "items": [
+                            {
+                                "simpleResponse": {
+                                    "textToSpeech": "moving forward"
+                                }
+                            },
+                            {
+                                "deviceExecution": {
+                                    "command": "Forward"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+		{
+            "name": "Back",
+            "availability": {
+                "deviceClasses": [
+                    {
+                        "assistantSdkDevice": {}
+                    }
+                ]
+            },
+            "intent": {
+                "name": "robot.device.command.Back",
+                "trigger": {
+                    "queryPatterns": [
+                        "back",
+						"move backward",
+						"move back",
+						"can you move backward",
+						"can you move back",
+						"go backward",
+						"go back",
+						"back please",
+						"backward please",
+						"can you go backward",
+						"can you go back",
+						"please move back",
+						"please go backward"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "staticFulfillment": {
+                    "templatedResponse": {
+                        "items": [
+                            {
+                                "simpleResponse": {
+                                    "textToSpeech": "moving back"
+                                }
+                            },
+                            {
+                                "deviceExecution": {
+                                    "command": "Back"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+		{
+            "name": "Left",
+            "availability": {
+                "deviceClasses": [
+                    {
+                        "assistantSdkDevice": {}
+                    }
+                ]
+            },
+            "intent": {
+                "name": "robot.device.command.Left",
+                "trigger": {
+                    "queryPatterns": [
+                        "left",
+						"turn left",
+						"move back",
+						"can you turn left",
+						"can you go left",
+						"go left",
+						"left please",
+						"please turn left"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "staticFulfillment": {
+                    "templatedResponse": {
+                        "items": [
+                            {
+                                "simpleResponse": {
+                                    "textToSpeech": "turning left"
+                                }
+                            },
+                            {
+                                "deviceExecution": {
+                                    "command": "Left"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+		{
+            "name": "Right",
+            "availability": {
+                "deviceClasses": [
+                    {
+                        "assistantSdkDevice": {}
+                    }
+                ]
+            },
+            "intent": {
+                "name": "robot.device.command.Right",
+                "trigger": {
+                    "queryPatterns": [
+                        "right",
+						"turn right",
+						"move right",
+						"can you turn right",
+						"can you go right",
+						"go right",
+						"right please",
+						"please turn right"
+                    ]
+                }
+            },
+            "fulfillment": {
+                "staticFulfillment": {
+                    "templatedResponse": {
+                        "items": [
+                            {
+                                "simpleResponse": {
+                                    "textToSpeech": "turning right"
+                                }
+                            },
+                            {
+                                "deviceExecution": {
+                                    "command": "Right"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}	

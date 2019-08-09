@@ -1,0 +1,15 @@
+[Unit]
+Description=Assist @ reboot
+
+[Service]
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+ExecStart=/bin/bash -c '/home/pi/env/bin/python -u /home/pi/assistant-sdk-python/google-assistant-sdk/googlesamples/assistant/library/rbp_robot.py'
+WorkingDirectory=/home/pi/env/bin/
+Restart=always
+User=pi
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=assist
+
+[Install]
+WantedBy=multi-user.target
